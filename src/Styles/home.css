@@ -26,7 +26,7 @@
 }
 
 .download-btn:hover{
-box-shadow: 0 0 10px rgb(56, 54, 54);
+box-shadow: 0 2px 10px rgb(56, 54, 54);
 }
 
 .download-btn>a {
