@@ -13,7 +13,7 @@ const NavigationBar = () => {
             <Container className="nav-container">
                 <Navbar className="nav-bar" bg="nav-bar" variant="dark" fixed="top" expand="sm" collapseOnSelect>
                     <Link to="/" className="logo-link" style={{ zIndex: "0" }}>
-                    <img className="logonav" src={require("../Images/logonav.jpg")} alt="C-cube" />
+                        <img className="logonav" src={require("../Images/logonav.jpg")} alt="C-cube" />
                         {/* <img className="logo" src={require("../Images/logo.jpg")} alt="C-cube" /> */}
                     </Link>
                     {/* Navigation bar style, hamburger display for smaller devices */}
@@ -24,8 +24,7 @@ const NavigationBar = () => {
                             <Nav.Link className="nav-link" as={Link} to="/" eventKey={0}>Home</Nav.Link>
                             <Nav.Link className="nav-link" as={Link} to="/dashboard" eventKey={1}>Dashboard</Nav.Link>
                             <Nav.Link className="nav-link" as={Link} to="/login" eventKey={2}>Login</Nav.Link>
-                            <Nav.Link className="nav-link" as={Link} to="/signup" eventKey={3}>Signup</Nav.Link>
-                            
+
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

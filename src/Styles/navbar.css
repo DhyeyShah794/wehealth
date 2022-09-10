@@ -1,9 +1,9 @@
 .nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: right;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: right;
+  align-items: center;
 }
 
 .nav-bar {
@@ -45,10 +45,10 @@
   color: #3366cc !important;
 }
 
-.logonav{
-    width: 7rem;
-    padding: 0.5rem 0 0 1rem;
-    margin: 0;
+.logonav {
+  width: 7rem;
+  padding: 0.5rem 0 0 1rem;
+  margin: 0;
 }
 
 
@@ -73,7 +73,7 @@
   }
 
   .nav-toggle {
-    position: fixed;  
+    position: fixed;
     top: 1rem;
     right: 1rem;
     /* color: #fff; */
@@ -97,4 +97,8 @@
     text-decoration: none;
     transition: 0.15s;
   }
+}
+
+.nav-link:hover {
+  color: #158185 !important;
 }

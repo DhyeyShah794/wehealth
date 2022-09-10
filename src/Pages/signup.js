@@ -1,39 +1,46 @@
+import { signInWithGoogle } from '../firebase';
+import { GoogleButton } from 'react-google-button';
+import { useEffect, useState } from 'react';
 import '../Styles/signup.css'
 
-const Signup = () => {
-    return (
-<div className="">
-		<div className="">
-			<div className="">
-				<span className="">
-					Account Login
-				</span>
-				<form className="">
+function Signup({ handleSubmit }) {
 
-					<div className="" data-validate = "Enter username">
-						<input className="" type="" name="username" placeholder="User name" />
-						<span className="" data-placeholder="&#xe82a;"></span>
-					</div>
+	return (
+		<div className="centre2">
+			<div className="form2">
+				<div className="">
 
-					<div className="" data-validate="Enter password">
-						<input className="" type="password" name="pass" placeholder="Password" />
-						<span className="" data-placeholder="&#xe80f;"></span>
-					</div>
+					<form className="box2">
 
-					<div className="">
-						<button className="">
-							Sign up
-						</button>
-					</div>
+						<span className='' >
+							<p className="signup1">SIGN UP</p>
+						</span>
 
-				</form>
+						<div className="username2" data-validate="Enter email">
+							<input className="" type="" name="email" placeholder="Email" required />
+							<span className="" data-placeholder="&#xe82a;"></span>
+						</div>
+
+						<div className="pwd2" data-validate="Enter password">
+							<input className="" type="password" name="pass" placeholder="Password" required />
+							<span className="" data-placeholder="&#xe80f;"></span>
+							<div className="">
+								<button className="bsignup">
+									Sign up
+								</button>
+							</div>
+							<div className="google-login">
+								<GoogleButton className="google-signup-btn" onClick={signInWithGoogle} />
+							</div>
+							<div>
+								<a href="/login" className="login">Already have an account? Login</a>
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
-	
-
-
-    );
+	);
 }
 
 export default Signup;
